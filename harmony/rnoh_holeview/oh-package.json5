@@ -1,0 +1,12 @@
+{
+  "name": "rnoh_holeview",
+  "version": "3.0.0-alpha4-0.0.1",
+  "description": "react native hole view",
+  "main": "Index.ets",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+//    "@rnoh/react-native-openharmony": "file:../libs/react_native_openharmony-5.0.0.501.har",
+    "@rnoh/react-native-openharmony": "file:../react_native_openharmony"
+  }
+}
