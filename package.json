@@ -1,62 +1,54 @@
 {
-  "name": "react-native-hole-view",
-  "version": "3.0.0-alpha4",
-  "description": "Component to made an overlay with touch-through hole",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
-  },
+  "name": "@react-native-oh-tpl/react-native-hole-view",
+  "version": "3.0.0-alpha4-0.0.1",
+  "description": "react native harmony package",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index.ts",
   "scripts": {
-    "build": "rm -rf ./dist && tsc -p tsconfig.json",
-    "preversion": "npm run build",
-    "prepare": "install-peers"
+    "build": "bob build",
+    "buildpack": "bob build && npm pack"
   },
-  "files": [
-    "android",
-    "ios",
-    "src",
-    "dist",
-    "react-native-hole-view.podspec"
-  ],
-  "keywords": [
-    "react-native",
-    "react-component",
-    "react-native-component",
-    "react",
-    "mobile",
-    "ios",
-    "android",
-    "ui",
-    "vector",
-    "retina",
-    "hole",
-    "mask"
-  ],
-  "author": "ibitcy",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^20.3.2",
-    "@types/react-native": "^0.69.2",
-    "install-peers-cli": "2.2.0",
-    "typescript": "4.2.4"
+  "files": [
+    "index.ts",
+    "src",
+    "harmony",
+    "lib"
+  ],
+  "harmony": {
+    "alias": "react-native-hole-view"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
   },
-  "dependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ibitcy/react-native-hole-view.git"
+  "devDependencies": {
+    "@types/react": "^18.2.47",
+    "react": "18.2.0",
+    "react-native": "0.72.5",
+    "react-native-builder-bob": "^0.20.4",
+    "typescript": "4.8.2"
   },
-  "bugs": {
-    "url": "https://github.com/ibitcy/react-native-hole-view/issues"
+  "dependencies": {
+    "react-native-hole-view": "^3.0.0-alpha4"
   },
-  "homepage": "https://github.com/ibitcy/react-native-hole-view#readme",
-  "codegenConfig": {
-    "name": "RNHoleView",
-    "type": "components",
-    "jsSrcsDir": "./src/codegenSpec"
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json",
+          "tsc": "./node_modules/.bin/tsc"
+        }
+      ]
+    ]
   }
 }

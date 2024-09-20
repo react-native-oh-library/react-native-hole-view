@@ -1,20 +1,25 @@
 {
   "compilerOptions": {
-    "skipLibCheck": true,
-    "module": "commonjs",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "declaration": true,
-    "jsx": "react-native",
-    "target": "es6",
-    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "paths": {},
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "lib": ["esnext"],
+    "module": "esnext",
     "moduleResolution": "node",
-    "noImplicitAny": false,
-    "typeRoots": [
-      "./node_modules/@types/"
-    ],
-  },
-  "include": [
-    "./src"
-  ]
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": false,
+    "noStrictGenericChecks": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext"
+  }
 }

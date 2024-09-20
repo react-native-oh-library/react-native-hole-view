@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "rnoh_holeview",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}
