@@ -1,6 +1,6 @@
 {
   "name": "@react-native-oh-tpl/react-native-hole-view",
-  "version": "3.0.0-alpha4-0.0.3",
+  "version": "3.0.0-alpha4-0.0.2",
   "description": "react native harmony package",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
