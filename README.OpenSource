@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-hole-view",
+        "License": "ISC License",
+        "License File": "https://github.com/ibitcy/react-native-hole-view/blob/master/package.json#L37",
+        "Version Number": "3.0.0-alpha4",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/ibitcy/react-native-hole-view",
+        "Description": "Component to made an overlay with touch-through hole"
+    }
+]
